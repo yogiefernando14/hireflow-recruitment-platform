@@ -4,55 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Settings - HireFlow Admin</title>
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Inter,sans-serif;
-}
-body{
-background:#0a0a0a;
-color:white;
-padding:40px;
-}
-h1{
-margin-bottom:30px;
-}
-.form{
-max-width:700px;
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-input{
-padding:18px;
-background:#111;
-border:1px solid rgba(255,255,255,.08);
-border-radius:14px;
-color:white;
-}
-button{
-padding:18px;
-border:none;
-border-radius:14px;
-background:white;
-color:black;
-font-weight:700;
-cursor:pointer;
-}
-</style>
+
+<link rel="stylesheet" href="admin.css">
+
 </head>
 <body>
-<h1>Settings</h1>
-<div class="form">
-<input type="text" value="HireFlow" placeholder="Company Name">
-<input type="email" value="contact@hireflow.com" placeholder="Company Email">
-<input type="text" value="+62 838 7288 0780" placeholder="Phone Number">
-<input type="text" value="Indonesia" placeholder="Location">
+
+<div class="sidebar">
+
+<div class="logo">
+HireFlow
+</div>
+
+<div class="menu">
+<a href="dashboard.html">Dashboard</a>
+<a href="applicants.html">Applicants</a>
+<a href="jobs.html">Jobs</a>
+<a href="analytics.html">Analytics</a>
+<a href="settings.html" class="active">Settings</a>
+</div>
+
+</div>
+
+<div class="main">
+
+<h1 class="page-title">
+Settings
+</h1>
+
+<div class="table-box">
+
+<h2 style="margin-bottom:20px;">
+Company Information
+</h2>
+
+<input type="text" placeholder="Company Name" value="HireFlow">
+
+<input type="email" placeholder="Company Email" value="hr@hireflow.com">
+
+<input type="text" placeholder="Company Location" value="Jakarta, Indonesia">
+
 <button>
 Save Changes
 </button>
+
 </div>
+
+<div class="table-box" style="margin-top:30px;">
+
+<h2 style="margin-bottom:20px;">
+Recruitment Settings
+</h2>
+
+<input type="text" placeholder="Default Job Status" value="Open">
+
+<input type="text" placeholder="Application Review Time" value="7 Days">
+
+<button>
+Update Settings
+</button>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
 </body>
 </html>
