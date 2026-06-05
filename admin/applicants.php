@@ -22,9 +22,9 @@ HireFlow
 <div class="menu">
 <a href="dashboard.php">Dashboard</a>
 <a href="applicants.php" class="active">Applicants</a>
-<a href="jobs.html">Jobs</a>
-<a href="analytics.html">Analytics</a>
-<a href="settings.html">Settings</a>
+<a href="jobs.php">Jobs</a>
+<a href="analytics.php">Analytics</a>
+<a href="settings.php">Settings</a>
 </div>
 
 </div>
