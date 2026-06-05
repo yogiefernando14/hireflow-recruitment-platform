@@ -59,10 +59,6 @@ Applications Growth
 <div class="value">1248</div>
 <div class="bar" style="height:380px;"></div>
 <div class="label">Jun</div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Analytics - HireFlow Admin</title>
 
@@ -77,11 +73,11 @@ HireFlow
 </div>
 
 <div class="menu">
-<a href="dashboard.html">Dashboard</a>
-<a href="applicants.html">Applicants</a>
-<a href="jobs.html">Jobs</a>
-<a href="analytics.html" class="active">Analytics</a>
-<a href="settings.html">Settings</a>
+<a href="dashboard.php">Dashboard</a>
+<a href="applicants.php">Applicants</a>
+<a href="jobs.php">Jobs</a>
+<a href="analytics.php" class="active">Analytics</a>
+<a href="settings.php">Settings</a>
 </div>
 
 </div>
