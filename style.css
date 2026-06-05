@@ -67,11 +67,13 @@ z-index:999;
 font-size:1.6rem;
 font-weight:900;
 letter-spacing:1px;
+justify-self:start;
 }
 .nav-links{
 display:flex;
 gap:35px;
 list-style:none;
+justify-content:center
 }
 .nav-links a{
 text-decoration:none;
@@ -109,6 +111,7 @@ text-decoration:none;
 display:flex;
 gap:12px;
 align-items:center;
+justify-self:end;
 margin-left:40px;
 }
 
