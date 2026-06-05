@@ -97,7 +97,7 @@ background:#111;
 padding:25px;
 border-radius:20px;
 border:1px solid rgba(255,255,255,.08);
-margin-top:30px;
+margin-top:40px;
 }
 .activity h2{
 margin-bottom:20px;
@@ -222,6 +222,7 @@ padding:30px;
 background:#111;
 border-radius:20px;
 border:1px solid rgba(255,255,255,.08);
+overflow:hidden;
 }
 
 .bar-group{
@@ -254,6 +255,7 @@ transition:.3s;
 
 .card:hover,
 .table-box:hover,
-.activity:hover{
+.activity:hover,
+.chart:hover{
 transform:translateY(-4px);
 }
