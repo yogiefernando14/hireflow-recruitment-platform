@@ -177,3 +177,7 @@ glow.style.top =
 e.clientY - 150 + "px";
 
 });
+window.addEventListener("scroll", () => {
+document.querySelector(".navbar")
+.classList.toggle("scrolled", window.scrollY > 50);
+});
