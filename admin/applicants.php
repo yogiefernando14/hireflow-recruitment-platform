@@ -48,8 +48,14 @@ Applicants
 </tr>
 
 <?php
-include "../config.php";
-$query = mysqli_query($conn,"SELECT * FROM applicants ORDER BY id DESC");
+$query = mysqli_query(
+
+    $conn,
+
+    "SELECT * FROM applicants ORDER BY id DESC"
+
+);
+
 while($row = mysqli_fetch_assoc($query)){
 echo "
 <tr>
@@ -62,9 +68,13 @@ New
 </span>
 </td>
 </tr>
+
 ";
+
 }
+
 ?>
+  
 </table>
 
 </div>
