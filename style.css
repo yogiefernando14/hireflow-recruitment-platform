@@ -535,21 +535,12 @@ padding:18px 5%;
 .nav-links{
 display:none;
 }
-.logo{
-font-size:1.2rem;
-}
 .nav-actions{
-display:flex;
-gap:8px;
 margin-left:0;
 }
-.nav-btn{
-padding:10px 14px;
-font-size:.85rem;
-}
 .admin-btn{
-padding:10px 14px;
-font-size:.85rem;
+padding:10px 18px;
+font-size:.9rem;
 }
 
 }
