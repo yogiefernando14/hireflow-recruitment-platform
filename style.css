@@ -527,19 +527,32 @@ z-index:-1;
 }
 /* MOBILE */
 @media(max-width:900px){
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 5%;
+}
 .nav-links{
 display:none;
 }
-
+.logo{
+font-size:1.2rem;
+}
 .nav-actions{
 display:flex;
 gap:8px;
+margin-left:0;
+}
+.nav-btn{
+padding:10px 14px;
+font-size:.85rem;
+}
+.admin-btn{
+padding:10px 14px;
+font-size:.85rem;
 }
 
-.nav-btn,
-.admin-btn{
-padding:10px 16px;
-font-size:.9rem;
 }
 .hero h1{
 font-size:3rem;
