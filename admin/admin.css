@@ -197,3 +197,16 @@ color:#999;
 margin-bottom:10px;
 font-weight:700;
 }
+
+.card,
+.table-box,
+.activity,
+.chart{
+transition:.3s;
+}
+
+.card:hover,
+.table-box:hover,
+.activity:hover{
+transform:translateY(-4px);
+}
