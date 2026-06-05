@@ -445,6 +445,9 @@ display:none;
 .nav-btn{
 display:none;
 }
+.nav-actions{
+display:none;
+}
 .hero h1{
 font-size:3rem;
 }
