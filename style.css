@@ -287,6 +287,26 @@ transition:.35s;
 transform:translateY(-8px);
 border-color:rgba(255,255,255,.15);
 }
+.trusted{
+padding:0 8% 100px;
+text-align:center;
+}
+.trusted p{
+color:#777;
+margin-bottom:30px;
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:.85rem;
+}
+.trusted-logos{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:50px;
+font-size:1.3rem;
+font-weight:800;
+color:#666;
+}
 /* STATS */
 .stats{
 padding:0 8% 120px;
