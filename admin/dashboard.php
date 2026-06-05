@@ -2,11 +2,19 @@
 
 session_start();
 
+if(!isset($_SESSION['admin'])){
+
+    header("Location: login.php");
+
+    exit;
+
+}
+
 include "../config.php";
 
 $totalApplicants = mysqli_num_rows(
 
-mysqli_query($conn,"SELECT * FROM applicants")
+    mysqli_query($conn,"SELECT * FROM applicants")
 
 );
 
@@ -113,16 +121,6 @@ Recent Applicants
 </h2>
 
 <table>
-
-<tr>
-
-<th>Name</th>
-
-<th>Position</th>
-
-<th>Status</th>
-
-</tr>
 
 <tr>
 
