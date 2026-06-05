@@ -54,8 +54,8 @@ top:0;
 left:0;
 width:100%;
 padding:22px 8%;
-display:grid;
-grid-template-columns:auto 1fr auto;
+display:flex;
+justify-content:space-between;
 align-items:center;
 background:rgba(0,0,0,.55);
 backdrop-filter:blur(20px);
@@ -67,7 +67,6 @@ z-index:999;
 font-size:1.6rem;
 font-weight:900;
 letter-spacing:1px;
-justify-self:start;
 }
 .nav-links{
 display:flex;
@@ -111,7 +110,6 @@ text-decoration:none;
 display:flex;
 gap:12px;
 align-items:center;
-justify-self:end;
 }
 
 .admin-btn{
