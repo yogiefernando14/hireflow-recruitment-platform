@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+include "../config.php";
+
+$totalApplicants = mysqli_num_rows(
+
+mysqli_query($conn,"SELECT * FROM applicants")
+
+);
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
