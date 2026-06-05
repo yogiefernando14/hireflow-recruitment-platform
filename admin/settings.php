@@ -17,11 +17,11 @@ HireFlow
 </div>
 
 <div class="menu">
-<a href="dashboard.html">Dashboard</a>
-<a href="applicants.html">Applicants</a>
-<a href="jobs.html">Jobs</a>
-<a href="analytics.html">Analytics</a>
-<a href="settings.html" class="active">Settings</a>
+<a href="dashboard.php">Dashboard</a>
+<a href="applicants.php">Applicants</a>
+<a href="jobs.php">Jobs</a>
+<a href="analytics.php">Analytics</a>
+<a href="settings.php" class="active">Settings</a>
 </div>
 
 </div>
