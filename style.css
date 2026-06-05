@@ -67,6 +67,13 @@ overflow:hidden;
 .logo{
 font-size:1.6rem;
 font-weight:900;
+letter-spacing:1px;
+justify-self:start;
+cursor:pointer;
+transition:.3s;
+}
+.logo:hover{
+transform:scale(1.05);
 }
 .nav-links{
 display:flex;
