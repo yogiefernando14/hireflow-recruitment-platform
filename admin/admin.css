@@ -164,6 +164,8 @@ body{
 flex-direction:column;
 }
 
+}
+
 .chart{
 height:400px;
 display:flex;
