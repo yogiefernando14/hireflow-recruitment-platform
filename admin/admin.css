@@ -164,4 +164,34 @@ body{
 flex-direction:column;
 }
 
+.chart{
+height:400px;
+display:flex;
+align-items:flex-end;
+gap:25px;
+padding:30px;
+background:#111;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.bar-group{
+flex:1;
+text-align:center;
+}
+
+.bar{
+width:100%;
+background:white;
+border-radius:12px 12px 0 0;
+}
+
+.label{
+margin-top:12px;
+color:#999;
+}
+
+.value{
+margin-bottom:10px;
+font-weight:700;
 }
