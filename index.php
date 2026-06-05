@@ -277,16 +277,37 @@ Frequently Asked Questions
 Send Your Application
 </h2>
 </div>
-<form class="apply-form">
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email Address">
-<input type="text" placeholder="Phone Number">
-<input type="text" placeholder="Position Applied For">
-<input type="url" placeholder="Portfolio Link">
-<textarea placeholder="Tell us about yourself"></textarea>
+<form class="apply-form" action="apply.php" method="POST">
+
+<input type="text"
+name="fullname"
+placeholder="Full Name">
+
+<input type="email"
+name="email"
+placeholder="Email Address">
+
+<input type="text"
+name="phone"
+placeholder="Phone Number">
+
+<input type="text"
+name="position"
+placeholder="Position Applied For">
+
+<input type="url"
+name="portfolio"
+placeholder="Portfolio Link">
+
+<textarea
+name="about"
+placeholder="Tell us about yourself">
+</textarea>
+
 <button type="submit">
 Submit Application
 </button>
+
 </form>
 </section>
 <section id="contact" class="section">
