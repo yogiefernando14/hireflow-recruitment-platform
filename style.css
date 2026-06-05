@@ -298,7 +298,7 @@ overflow:hidden;
 position:relative;
 }
 .job-card::before{
-content:""
+content:"";
 position:absolute;
 inset:0;
 background:
@@ -454,7 +454,8 @@ display:none;
 display:none;
 }
 .nav-actions{
-display:none;
+display:flex;
+gap:8px;
 }
 .hero h1{
 font-size:3rem;
