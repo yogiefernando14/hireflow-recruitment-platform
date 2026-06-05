@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics - HireFlow Admin</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+body{
+background:#0a0a0a;
+color:white;
+padding:40px;
+}
+h1{
+margin-bottom:40px;
+}
+.chart{
+height:400px;
+display:flex;
+align-items:flex-end;
+gap:25px;
+padding:30px;
+background:#111;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+.bar-group{
+flex:1;
+text-align:center;
+}
+.bar{
+width:100%;
+background:white;
+border-radius:12px 12px 0 0;
+transition:.3s;
+}
+.bar:hover{
+opacity:.8;
+}
+.label{
+margin-top:12px;
+color:#999;
+}
+.value{
+margin-bottom:10px;
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h1>Applications Growth</h1>
+<div class="chart">
+<div class="bar-group">
+<div class="value">120</div>
+<div class="bar" style="height:60px;"></div>
+<div class="label">Jan</div>
+</div>
+<div class="bar-group">
+<div class="value">240</div>
+<div class="bar" style="height:120px;"></div>
+<div class="label">Feb</div>
+</div>
+<div class="bar-group">
+<div class="value">380</div>
+<div class="bar" style="height:180px;"></div>
+<div class="label">Mar</div>
+</div>
+<div class="bar-group">
+<div class="value">520</div>
+<div class="bar" style="height:240px;"></div>
+<div class="label">Apr</div>
+</div>
+<div class="bar-group">
+<div class="value">760</div>
+<div class="bar" style="height:320px;"></div>
+<div class="label">May</div>
+</div>
+<div class="bar-group">
+<div class="value">1248</div>
+<div class="bar" style="height:380px;"></div>
+<div class="label">Jun</div>
+</div>
+</div>
+</body>
+</html>
