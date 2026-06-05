@@ -92,6 +92,23 @@ border-radius:20px;
 border:1px solid rgba(255,255,255,.08);
 }
 
+.activity{
+background:#111;
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+margin-top:30px;
+}
+.activity h2{
+margin-bottom:20px;
+}
+.activity ul{
+padding-left:20px;
+}
+.activity li{
+margin-bottom:10px;
+}
+
 table{
 width:100%;
 border-collapse:collapse;
@@ -147,9 +164,39 @@ color:black;
 font-weight:700;
 cursor:pointer;
 }
-
 @media(max-width:900px){
 
+.main{
+padding:20px;
+}
+.page-title{
+font-size:1.8rem;
+}
+.cards{
+grid-template-columns:1fr;
+}
+.menu{
+flex-direction:row;
+flex-wrap:wrap;
+}
+.menu a{
+padding:10px 12px;
+font-size:.9rem;
+}
+.logo{
+margin-bottom:20px;
+}
+.chart{
+height:280px;
+padding:15px;
+gap:10px;
+}
+.value{
+font-size:.8rem;
+}
+.label{
+font-size:.8rem;
+}
 .sidebar{
 position:relative;
 width:100%;
