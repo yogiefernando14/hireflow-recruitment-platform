@@ -56,8 +56,8 @@ observer.observe(el);
    BUTTON HOVER SCALE
 ========================= */
 document.querySelectorAll(
-"button,.primary-btn,.secondary-btn,.nav-btn"
-).forEach((btn)=>{
+"button,.primary-btn,.secondary-btn,.admin-btn"
+)
 btn.addEventListener("mouseenter",()=>{
 btn.style.transform =
 "scale(1.05)";
@@ -176,8 +176,4 @@ e.clientX - 150 + "px";
 glow.style.top =
 e.clientY - 150 + "px";
 
-});
-window.addEventListener("scroll", () => {
-document.querySelector(".navbar")
-.classList.toggle("scrolled", window.scrollY > 50);
 });
