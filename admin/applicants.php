@@ -1,3 +1,6 @@
+<?php
+include "../config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +20,8 @@ HireFlow
 </div>
 
 <div class="menu">
-<a href="dashboard.html">Dashboard</a>
-<a href="applicants.html" class="active">Applicants</a>
+<a href="dashboard.php">Dashboard</a>
+<a href="applicants.php" class="active">Applicants</a>
 <a href="jobs.html">Jobs</a>
 <a href="analytics.html">Analytics</a>
 <a href="settings.html">Settings</a>
@@ -43,27 +46,24 @@ Applicants
 <th>Status</th>
 </tr>
 
+<?php
+include "../config.php";
+$query = mysqli_query($conn,"SELECT * FROM applicants ORDER BY id DESC");
+while($row = mysqli_fetch_assoc($query)){
+echo "
 <tr>
-<td>Yogie Fernando</td>
-<td>Frontend Developer</td>
-<td>yogie@email.com</td>
-<td><span class="status review">Reviewing</span></td>
+<td>".$row['fullname']."</td>
+<td>".$row['position']."</td>
+<td>".$row['email']."</td>
+<td>
+<span class='status review'>
+New
+</span>
+</td>
 </tr>
-
-<tr>
-<td>Sarah Johnson</td>
-<td>UI/UX Designer</td>
-<td>sarah@email.com</td>
-<td><span class="status interview">Interview</span></td>
-</tr>
-
-<tr>
-<td>Michael Lee</td>
-<td>Video Editor</td>
-<td>michael@email.com</td>
-<td><span class="status accepted">Accepted</span></td>
-</tr>
-
+";
+}
+?>
 </table>
 
 </div>
