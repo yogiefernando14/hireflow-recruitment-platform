@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['admin'])){
+header("Location: login.php");
+exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +30,7 @@ HireFlow
 <a href="jobs.php">Jobs</a>
 <a href="analytics.php">Analytics</a>
 <a href="settings.php" class="active">Settings</a>
+<a href="logout.php">Logout</a> 
 </div>
 
 </div>
