@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applicants - HireFlow Admin</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+body{
+background:#0a0a0a;
+color:white;
+padding:40px;
+}
+h1{
+margin-bottom:30px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+background:#111;
+border-radius:20px;
+overflow:hidden;
+}
+th{
+background:#181818;
+padding:20px;
+text-align:left;
+}
+td{
+padding:20px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+.status{
+padding:8px 12px;
+border-radius:999px;
+font-size:.8rem;
+}
+.review{
+background:#444;
+}
+.interview{
+background:#ffb300;
+color:black;
+}
+.accepted{
+background:#00c853;
+color:black;
+}
+</style>
+</head>
+<body>
+<h1>Applicants</h1>
+<table>
+<tr>
+<th>Name</th>
+<th>Position</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>Yogie Fernando</td>
+<td>Frontend Developer</td>
+<td>yogie@email.com</td>
+<td><span class="status review">Reviewing</span></td>
+</tr>
+<tr>
+<td>Sarah Johnson</td>
+<td>UI/UX Designer</td>
+<td>sarah@email.com</td>
+<td><span class="status interview">Interview</span></td>
+</tr>
+<tr>
+<td>Michael Lee</td>
+<td>Video Editor</td>
+<td>michael@email.com</td>
+<td><span class="status accepted">Accepted</span></td>
+</tr>
+</table>
+</body>
+</html>
