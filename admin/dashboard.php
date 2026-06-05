@@ -71,7 +71,7 @@ Recruitment Overview
 
 <div class="card">
 
-<h2>1248</h2>
+<h2><?php echo $totalApplicants; ?></h2>
 
 <p>Applications</p>
 
@@ -125,33 +125,37 @@ Recent Applicants
 
 <tr>
 
-<td>Yogie Fernando</td>
+<th>Name</th>
 
-<td>Frontend Developer</td>
+<th>Position</th>
 
-<td><span class="status review">Reviewing</span></td>
+<th>Status</th>
 
 </tr>
+<?php
 
+$result = mysqli_query(
+$conn,
+"SELECT * FROM applicants ORDER BY id DESC LIMIT 10"
+);
+
+while($row = mysqli_fetch_assoc($result)){
+
+echo "
 <tr>
-
-<td>Sarah Johnson</td>
-
-<td>UI/UX Designer</td>
-
-<td><span class="status interview">Interview</span></td>
-
+<td>{$row['fullname']}</td>
+<td>{$row['position']}</td>
+<td>
+<span class='status review'>
+New
+</span>
+</td>
 </tr>
+";
 
-<tr>
+}
 
-<td>Michael Lee</td>
-
-<td>Video Editor</td>
-
-<td><span class="status accepted">Accepted</span></td>
-
-</tr>
+?>
 
 </table>
 
