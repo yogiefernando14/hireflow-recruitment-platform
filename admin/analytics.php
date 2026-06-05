@@ -78,6 +78,7 @@ HireFlow
 <a href="jobs.php">Jobs</a>
 <a href="analytics.php" class="active">Analytics</a>
 <a href="settings.php">Settings</a>
+<a href="logout.php">Logout</a>
 </div>
 
 </div>
