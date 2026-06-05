@@ -1,4 +1,3 @@
-alert("JS jalan");
 /* =========================
    LOADER
 ========================= */
@@ -56,15 +55,17 @@ observer.observe(el);
 ========================= */
 document.querySelectorAll(
 "button,.primary-btn,.secondary-btn,.admin-btn"
-)
+).forEach((btn)=>{
 btn.addEventListener("mouseenter",()=>{
-btn.style.transform =
-"scale(1.05)";
+btn.style.transform = "scale(1.05)";
+
 });
+
 btn.addEventListener("mouseleave",()=>{
-btn.style.transform =
-"scale(1)";
+btn.style.transform = "scale(1)";
+
 });
+
 });
 /* =========================
    HERO FLOAT EFFECT
