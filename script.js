@@ -14,25 +14,23 @@ loader.style.display = "none";
 /* =========================
    NAVBAR SCROLL EFFECT
 ========================= */
-const navbar =
-document.querySelector(".navbar");
+const navbar = document.querySelector(".navbar");
+
+if(navbar){
 window.addEventListener("scroll",()=>{
 if(window.scrollY > 50){
-navbar.style.background =
-"rgba(0,0,0,.75)";
-navbar.style.backdropFilter =
-"blur(25px)";
+navbar.style.background = "rgba(0,0,0,.75)";
+navbar.style.backdropFilter = "blur(25px)";
 navbar.style.borderBottom =
 "1px solid rgba(255,255,255,.08)";
 }else{
-navbar.style.background =
-"rgba(0,0,0,.55)";
-navbar.style.backdropFilter =
-"blur(20px)";
+navbar.style.background = "rgba(0,0,0,.55)";
+navbar.style.backdropFilter = "blur(20px)";
 navbar.style.borderBottom =
 "1px solid rgba(255,255,255,.05)";
 }
 });
+}
 /* =========================
    REVEAL ANIMATION
 ========================= */
@@ -165,15 +163,12 @@ original;
 console.log(
 "HireFlow Premium Loaded"
 );
-const glow =
-document.querySelector(".cursor-glow");
-
+const glow = document.querySelector(".cursor-glow");
+if(glow){
 document.addEventListener("mousemove",(e)=>{
-
-glow.style.left =
-e.clientX - 150 + "px";
-
-glow.style.top =
-e.clientY - 150 + "px";
+glow.style.left = (e.clientX - 150) + "px";
+glow.style.top = (e.clientY - 150) + "px";
 
 });
+
+}
